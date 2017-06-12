@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bharti.demo.HomeActivity"
+    android:fitsSystemWindows="true"
+    android:background="@mipmap/bg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="547dp"
+        android:layout_weight="0.90"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:src="@mipmap/mark"
+            android:id="@+id/ivMark"
+            android:layout_gravity="center"
+            android:paddingTop="150dp"
+            android:paddingBottom="100dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp" />
+
+        <TextView
+            android:text="WELCOME!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWelcome"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:paddingLeft="110dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="50dp">
+
+        <Button
+            android:text="SIGN IN"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bSignin"
+            android:layout_weight="1"
+            android:background="@color/orchid"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="SIGN UP"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bSignup"
+            android:layout_weight="1"
+            android:background="@color/orchid"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

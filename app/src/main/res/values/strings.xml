@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="title_activity_home">Home</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="email">EMAIL ID</string>
+    <string name="password">PASSWORD</string>
+    <string name="issue">ISSUE</string>
+    <string name="new_issue">New Issue</string>
+    <string name="forms">Forms</string>
+    <string name="date">DATE</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="upload">UPLOAD IMAGE</string>
+    <string name="location">LOCATION</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="form">FORMS</string>
+    <string name="messenger">MESSENGER</string>
+    <string name="status">STATUS</string>
+    <string name="logout">LOG OUT</string>
+    <string name="login">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="title_activity_login">Login</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="category">CATEGORY</string>
+    <string name="unemployment">Unemployment</string>
+    <string name="safety">Safety</string>
+    <string name="traffic">Traffic</string>
+    <string name="transport">Public Transport</string>
+    <string name="other">Other</string>
+    <string name="title_activity_display">Display</string>
+    <string name="default_media_location_folder">smartCity</string>
+    <string name="send">Send</string>
+    <string name="title_activity_sample">Sample</string>
+    <string name="title_activity_messenger">MessengerActivity</string>
+    <string name="login_with_google">Login with Google+</string>
+    <string name="title_activity_messenger_options">MessengerOptions</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

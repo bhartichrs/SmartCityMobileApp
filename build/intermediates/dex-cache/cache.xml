@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/deveshchourasiya/AndroidStudioProjects/smartCity/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/deveshchourasiya/AndroidStudioProjects/smartCity/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c0b5a7e012477c4b3e711541ec85b129a65fc4b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/deveshchourasiya/AndroidStudioProjects/smartCity/android/app/libs/PhotoUtil.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caf49e92eae4ca2805d530a92cb4777c1ef53f53">
+        <dex dex="/Users/deveshchourasiya/AndroidStudioProjects/smartCity/android/app/build/intermediates/transforms/dex/debug/folders/1000/2/PhotoUtil_566caff7315c67b3f754111ab81a5919247ed4f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/deveshchourasiya/AndroidStudioProjects/smartCity/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b82f46f291ce75bbcd11f7c4c072c7092469b631">
+        <dex dex="/Users/deveshchourasiya/AndroidStudioProjects/smartCity/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_99704b567fb419de005aca746b684a0b4f1cdc89/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bharti.demo.NavigationActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="241dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivDashboard"
+            android:layout_weight="1"
+            android:src="@mipmap/overview"
+            android:padding="50dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivNewsFeed"
+            android:layout_weight="1"
+            android:padding="50dp"
+            android:src="@mipmap/lists" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <TextView
+            android:text="@string/dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDashboard"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:paddingLeft="60dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="@string/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNewsFeed"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:paddingLeft="45dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="234dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/issue"
+            android:id="@+id/ivIssue"
+            android:layout_weight="1"
+            android:padding="50dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/profile"
+            android:id="@+id/ivMessenger"
+            android:layout_weight="1"
+            android:padding="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="29dp">
+
+        <TextView
+            android:text="@string/issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvIssueIcon"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:paddingLeft="80dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="@string/messenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMessenger"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:paddingLeft="45dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:text="@string/logout"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bLogOut"
+            android:gravity="center"
+            tools:ignore="HardcodedText"
+            android:layout_marginBottom="10dp"
+            android:background="@color/orchid"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

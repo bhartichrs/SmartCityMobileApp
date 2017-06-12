@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bharti.demo">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <permission
+        android:name="smartCity.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".smartCityChat"
+        android:label="@string/app_name">
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar"
+        tools:replace="android:supportsRtl">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="main_folder_name"
+            android:value="@string/default_media_location_folder" /> <!-- Attachment Folder Name -->
+
+        <meta-data
+            android:name="com.package.name"
+            android:value="${applicationId}" /> <!-- NOTE: Do NOT change this, it should remain same i.e 'com.package.name' -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- <activity -->
+        <!-- android:name=".HomeActivity" -->
+        <!-- android:label="@string/title_activity_home" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="Signup"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppBaseTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bharti.demo.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".IssueActivity"
+            android:label="Create Issue"
+            android:theme="@style/AppBaseTheme">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.bharti.demo.IndividualChatActivity" />
+        </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".FormActivity"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".ListIssues"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".DisplayIssue"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:layout_gravity="center"
+            android:label="@string/common_signin_button_text"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppBaseTheme">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bharti.demo.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".GroupChatActivity"
+            android:label="Chat!"
+            android:parentActivityName=".ListForums"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".ListForums"
+            android:parentActivityName=".NavigationActivity"
+            android:theme="@style/AppBaseTheme"></activity>
+        <activity android:name=".IndividualChatActivity"
+            android:label="Chat!"
+            android:parentActivityName=".ListForums"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+    </application>
+
+</manifest>

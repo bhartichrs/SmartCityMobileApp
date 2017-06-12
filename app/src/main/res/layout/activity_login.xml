@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bharti.demo.LoginActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="229dp">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/ivNewUser"-->
+            <!--android:background="@mipmap/headerbg"-->
+            <!--android:padding="70dp"-->
+            <!--tools:ignore="ContentDescription,VectorDrawableCompat"-->
+            <!--android:src="@mipmap/profile"-->
+            <!--android:layout_gravity="center" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@mipmap/headerbg"
+        android:layout_weight="1.13"
+        android:padding="70dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="EMAIL ID"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etEmailId"
+                tools:ignore="HardcodedText"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:hint="@string/email" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--app:srcCompat="@mipmap/group1"-->
+                <!--android:id="@+id/ivEmail"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="10dp"-->
+                <!--android:contentDescription=""-->
+                <!--tools:ignore="ContentDescription"-->
+                <!--android:src="@mipmap/group1" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="PASSWORD"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:background="@color/white"
+                android:id="@+id/etLoginPassword"
+                tools:ignore="HardcodedText"
+                android:textColor="@color/black"
+                android:hint="@string/password" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/ivPassword"-->
+                <!--android:padding="5dp"-->
+                <!--android:src="@mipmap/group"-->
+                <!--android:contentDescription=""-->
+                <!--tools:ignore="ContentDescription" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="@string/login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/bLogin"
+                android:gravity="center"
+                tools:ignore="HardcodedText"
+                android:background="@color/orchid"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="130dp"
+            android:layout_weight="1">
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                tools:ignore="HardcodedText"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:id="@+id/login_with_google"
+                android:text="@string/login_with_google" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
